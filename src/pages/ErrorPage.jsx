@@ -1,0 +1,26 @@
+import React, { useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+
+export default function ErrorPage() {
+  let navigate = useNavigate()
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (localStorage.getItem("login") && window.location.pathname.includes("profile"))
+        navigate(0)
+      else if (localStorage.getItem("login") && window.location.pathname==="/admin" && localStorage.getItem("role")!=="Buyer")
+        navigate(0)
+    }, 500)
+  }, [window.location.href])
+
+  return (
+    <div className="container my-3">
+      <div className='card p-5 text-center'>
+
+        <h1>OOPs!!!!!</h1>
+        <h2>404! Page not found</h2>
+        <Link to="/" className="btn btn-primary w-25 m-auto mt-2">Back to Home</Link>
+      </div>
+    </div>
+  )
+}
