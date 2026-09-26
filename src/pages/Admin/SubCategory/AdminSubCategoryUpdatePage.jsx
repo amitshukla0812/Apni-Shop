@@ -6,7 +6,7 @@ import FormValidator from '../../../Validators/FormValidator'
 import ImageValidator from '../../../Validators/ImageValidator'
 
 import { useDispatch, useSelector } from "react-redux";
-import { getSubCategory, updateSubCategory } from "../../../Redux/ActionCreators/subCategoryActionCreator"
+import { getSubCategory, updateSubCategory } from "../../../Redux/ActionCreators/SubCategoryActionCreator"
 
 
 

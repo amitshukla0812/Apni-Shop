@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import FormValidator from '../../../Validators/FormValidator'
 import ImageValidator from '../../../Validators/ImageValidator'
 
-import { getSubCategory, createSubCategory } from '../../../Redux/ActionCreators/subCategoryActionCreator'
+import { getSubCategory, createSubCategory } from '../../../Redux/ActionCreators/SubCategoryActionCreator'
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function AdminSubcategoryCreatePage() {
