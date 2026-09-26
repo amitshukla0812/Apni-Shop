@@ -6,7 +6,7 @@ import "datatables.net-dt/css/dataTables.dataTables.min.css";
 import AdminSidebar from "../../../components/Admin/AdminSidebar";
 import { useDispatch, useSelector } from "react-redux";
 
-import { getFaq, deleteFaq } from "../../../Redux/ActionCreators/faqActionCreator"
+import { getFaq, deleteFaq } from "../../../Redux/ActionCreators/FaqActionCreator"
 
 
 
