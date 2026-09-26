@@ -4,7 +4,7 @@
 import FormValidator from '../../../Validators/FormValidator'
  import ImageValidator from '../../../Validators/ImageValidator'
 
-import { getBrand,createBrand } from '../../../Redux/ActionCreators/brandActionCreator'
+import { getBrand,createBrand } from '../../../Redux/ActionCreators/BrandActionCreator'
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function AdminBrandCreatePage() {

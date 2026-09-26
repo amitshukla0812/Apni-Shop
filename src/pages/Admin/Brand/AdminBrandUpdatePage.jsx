@@ -6,7 +6,7 @@ import FormValidator from '../../../Validators/FormValidator'
 import ImageValidator from '../../../Validators/ImageValidator'
 
 import { useDispatch, useSelector } from "react-redux";
-import { getBrand, updateBrand } from "../../../Redux/ActionCreators/brandActionCreator"
+import { getBrand, updateBrand } from "../../../Redux/ActionCreators/BrandActionCreator"
 
 
 
