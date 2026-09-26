@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import FormValidator from '../../../Validators/FormValidator'
 
 
-import { getFaq, createFaq } from '../../../Redux/ActionCreators/faqActionCreator'
+import { getFaq, createFaq } from '../../../Redux/ActionCreators/FaqActionCreator'
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function AdminFaqCreatePage() {

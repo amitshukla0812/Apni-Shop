@@ -5,7 +5,7 @@ import FormValidator from '../../../Validators/FormValidator'
 
 
 import { useDispatch, useSelector } from "react-redux";
-import { getFaq, updateFaq } from "../../../Redux/ActionCreators/faqActionCreator"
+import { getFaq, updateFaq } from "../../../Redux/ActionCreators/FaqActionCreator"
 
 
 
