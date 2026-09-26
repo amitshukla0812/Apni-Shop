@@ -18,15 +18,9 @@ import { Autoplay } from 'swiper/modules'
 
 export default function HomePage() {
 
-
-
-
-
     let [settingData, setSettingData] = useState({
 
         siteName: import.meta.env.VITE_APP_SITE_NAME,
-
-
     })
 
     let SettingStateData = useSelector(state => state.SettingStateData)
@@ -50,8 +44,6 @@ export default function HomePage() {
                 let item = SettingStateData[0]
                 setSettingData({
                     siteName: item.siteName ? item.siteName : settingData.siteName,
-
-
                 })
             }
 

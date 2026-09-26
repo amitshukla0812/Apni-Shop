@@ -12,18 +12,14 @@ export default function Footer() {
 
         address: import.meta.env.VITE_APP_ADDRESS,
         map1: import.meta.env.VITE_APP_MAP1,
-
         email: import.meta.env.VITE_APP_EMAIL,
-
         phone: import.meta.env.VITE_APP_PHONE,
-
         whatsapp: import.meta.env.VITE_APP_WHATSAPP,
-
         facebook: import.meta.env.VITE_APP_FACEBOOK,
         twitter: import.meta.env.VITE_APP_TWITTER,
         instagram: import.meta.env.VITE_APP_INSTAGRAM,
         youtube: import.meta.env.VITE_APP_YOUTUBE,
-        linkedin: import.meta.env.VITE_APP_LINKDIN,
+        linkedin: import.meta.env.VITE_APP_LINKEDIN,
 
     })
 
@@ -117,9 +113,7 @@ function postData(e) {
 
     return (
         <>
-
-
-            <div className="container-fluid bg-dark text-light mt-5 py-5">
+          <div className="container-fluid bg-dark text-light mt-5 py-5">
                 <div className="container py-5">
                     <div className="row g-5">
                         <div className="col-lg-4 col-md-6">
@@ -165,8 +159,8 @@ function postData(e) {
                             </form>
                             <h6 className=" mt-5 text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
                             <div className="d-flex">
-                                <Link className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" to={settingData.twitter} target='_blank'><i
-                                    className="fab fa-twitter"></i></Link>
+                                <Link className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" to={settingData.youtube} target='_blank'>
+                                  <i className="fab fa-youtube"></i>   </Link>
                                 <Link className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" to={settingData.facebook} target='_blank'><i
                                     className="fab fa-facebook"></i></Link>
                                 <Link className="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" to={settingData.instagram} target='_blank'><i
@@ -185,19 +179,12 @@ function postData(e) {
                 <div className="container">
 
                     <div className=" text-center ">
-                        <p className="mb-md-0">&copy; <Link className="text-primary" href="#!">{settingData.sitename}</Link>. All Rights Reserved.
+                        <p className="mb-md-0">&copy; <Link className="text-primary" href="#!">{settingData.siteName}</Link>. All Rights Reserved.
                         </p>
                     </div>
 
                 </div>
             </div>
-
-
-
-
-
-
-
-        </>
+ </>
     )
 }

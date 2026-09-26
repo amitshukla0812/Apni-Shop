@@ -19,7 +19,7 @@ export default function NavBar() {
         twitter: import.meta.env.VITE_APP_TWITTER,
         instagram: import.meta.env.VITE_APP_INSTAGRAM,
         youtube: import.meta.env.VITE_APP_YOUTUBE,
-        linkedin: import.meta.env.VITE_APP_LINKDIN,
+        linkedin: import.meta.env.VITE_APP_LINKEDIN,
 
     })
 
@@ -83,11 +83,7 @@ export default function NavBar() {
                                     <span className='d-none d-xl-inline-block'>{settingData.email}</span>
                                 </Link>
 
-                                <Link
-                                    to={`tel:${settingData.phone}`}
-                                    className="text-decoration-none text-body pe-3"
-                                >
-                                    <i className="bi bi-telephone me-2"></i>
+                                <Link to={`tel:${settingData.phone}`} className="text-decoration-none text-body pe-3">  <i className="bi bi-telephone me-2"></i>
                                     <span className='d-none d-xl-inline-block'>{settingData.phone}</span>
                                 </Link>
 
